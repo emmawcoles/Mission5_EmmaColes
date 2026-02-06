@@ -1,0 +1,32 @@
+using System.Diagnostics;
+using Microsoft.AspNetCore.Mvc;
+using Mission5_EmmaColes.Models;
+
+namespace Mission5_EmmaColes.Controllers
+{
+    public class HomeController : Controller
+    {
+        public IActionResult Index()
+        {
+            return View();
+
+        }
+
+        public IActionResult Calculator()
+        {
+            return View();
+        }
+
+
+        public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+    }
+}

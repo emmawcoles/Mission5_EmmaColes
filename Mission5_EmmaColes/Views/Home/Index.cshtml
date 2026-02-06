@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Inside the Circle</h1>
+    <p class="lead">Disc golf experience, competition, and coaching</p>
+</div>
+
+<hr />
+
+<div class="row mt-4">
+    <div class="col-md-4">
+        <img src="~/images/competition.jpeg"
+             class="img-fluid rounded mb-3"
+             alt="Collegiate disc golf competition" />
+    </div>
+
+    <div class="col-md-4">
+        <img src="~/images/throw.png"
+             class="img-fluid rounded mb-3"
+             alt="Disc golf drive throw" 
+             style="max-height: 350px; width: 100%; object-fit: cover;" />
+    </div>
+
+    <div class="col-md-4">
+        <img src="~/images/putting.jpeg"
+             class="img-fluid rounded mb-3"
+             alt="Disc golf basket and putting practice" />
+    </div>
+</div>
+
+<div class="mt-4">
+    <p>
+        Disc golf has been a huge part of my life, from casual rounds with friends
+        to competing at the collegiate level. The sport blends athleticism, strategy,
+        and mental focus, making every course and every throw a new challenge.
+    </p>
+
+    <p>
+        Competing collegiately taught me how important fundamentals are—proper grip,
+        throwing mechanics, shot selection, and confidence on the putting green.
+        Those skills don’t just help you score better; they make the game more fun.
+    </p>
+
+    <p>
+        Inside the Circle is about helping others build confidence and consistency
+        in their game. Whether you're brand new or looking to refine specific skills,
+        personalized tutoring can help you improve faster and enjoy disc golf more.
+    </p>
+</div>
+
+<div class="text-center mt-4">
+    <a class="btn btn-primary btn-lg"
+       asp-controller="Home"
+       asp-action="Calculator">
+        Calculate Tutoring Cost
+    </a>
+</div>
